@@ -17,6 +17,8 @@ Notes for data structures and algorithms. Language used is Java.
 
 ## Recursion
 
+What is Recursion?
+
 ## Sorting Algorithms
 
 ### Linear Search
@@ -44,7 +46,7 @@ In both search cases (left and right searching), you are only searching half of 
 Why use binary search?
 It is a more optimized search than linear search.
 
-In the best case scenario, the target element is the middle element. So, there is no searching that would be required. The space complexity would be constant: O(1)
+In the best case scenario, the target element is the middle element. So, there is no searching that would be required. The time complexity would be constant: O(1)
 
 In the worse case scenario, the maximum number of comparisons is the size of the array divided by 2: n/2
 
@@ -55,7 +57,7 @@ With each search, the array size (n) to search will be reduced aka divided in ha
 
 Generically this would be n/2^k = 1, where k is the number of searches and 1 is ultimately what we would eventually get n/2^k to equal. 
 
-To find the space complexity, we need to solve for the exponent k: n = 2^k
+To find the time complexity, we need to solve for the exponent k: n = 2^k
 
 We apply log (multiply log on both sides) to solve an exponential equation, to get rid of the exponent and solve for k. This makes the equation: log(N) = log(2^k)
 
@@ -63,7 +65,7 @@ This is simplified to: logN = k
 
 Remember, the exponent comes down (gotten rid of it) when multiplied by log.
 
-So, the space complexity would be: O(logN)
+So, the time complexity would be: O(logN)
 
 ### Bubble Sort
 
